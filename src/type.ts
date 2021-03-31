@@ -4,3 +4,18 @@ export type createUser = {
     email: string,
     birthDate: string
 }
+
+
+export enum PERIOD{
+    INTEGRAL = "INTEGRAL",
+    NIGTHLY = 'NIGTHLY'
+}
+
+export type createClass = {
+    id: string,
+    name: string,
+    startDate: string,
+    endDate: string,
+    module: number | undefined,
+    period: PERIOD
+}
