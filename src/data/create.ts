@@ -1,7 +1,7 @@
 import connection from '../connection'
 import { createUser } from '../type';
 
-export default async function create(user: createUser){
+export default async function create(user: createUser, table: string){
 
     const {id,name, email, birthDate} = user
 
@@ -10,7 +10,7 @@ export default async function create(user: createUser){
         name,
         email,
         birthDate
-    }).into('STUDENT')
+    }).into(`${table.toUpperCase()}`)
     
     
 }
