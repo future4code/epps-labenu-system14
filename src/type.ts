@@ -19,3 +19,9 @@ export type createClass = {
     module: number | undefined,
     period: PERIOD
 }
+
+export type addStudents = {
+    id: number,
+    studentId: string,
+    classId: string
+}
