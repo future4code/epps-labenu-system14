@@ -5,6 +5,5 @@ export default async function sellectAllStundet():Promise<any>{
     .select('*')
     .from("STUDENT")
 
-    console.log(result)
     return result
 }

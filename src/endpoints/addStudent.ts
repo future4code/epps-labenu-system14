@@ -8,9 +8,8 @@ export const addStudent = async(req: Request, res: Response) =>{
             id: Date.now(),
             studentId: req.body.student,
             classId: req.body.class
-            
         }
-        console.log(studentToClass.studentId)
+        
      
       
         const add = await addStudentToClass(studentToClass)
