@@ -1,10 +1,9 @@
 import connection from '../connection'
-import { addStudents } from '../type'
+import { relationship } from '../type'
 
-export  async function addStudentToClass(studentToClass: addStudents) {
+export  async function addStudentToClass(studentToClass: relationship) {
    
     const {id, studentId, classId} = studentToClass
-    console.log(id)
 
     await connection.raw(`
     INSERT INTO relacional_class VALUES(

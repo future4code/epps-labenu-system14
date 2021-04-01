@@ -1,6 +1,6 @@
 import app from "./app";
 import { addStudent } from "./endpoints/addStudent";
-
+import { addTeacher } from "./endpoints/addTeacher";
 import  { newClass } from "./endpoints/createClass";
 import { createStudent } from "./endpoints/createStudent";
 import { createTeacher } from "./endpoints/createTeacher";
@@ -13,3 +13,4 @@ app.post('/student', createStudent)
 app.post('/teacher', createTeacher)
 app.post('/class', newClass)
 app.post('/class/addstudent', addStudent)
+app.post('/class/addTeacher',addTeacher)

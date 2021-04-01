@@ -20,8 +20,9 @@ export type createClass = {
     period: PERIOD
 }
 
-export type addStudents = {
+export type relationship = {
     id: number,
-    studentId: string,
+    studentId?: string,
+    teacherId?: string,
     classId: string
 }
