@@ -1,11 +1,11 @@
 import {Request, Response} from 'express'
 import {addStudentToClass} from '../data/addStudentToClass'
-import { addStudents } from '../type'
+import { relationship } from '../type'
 
 export const addStudent = async(req: Request, res: Response) =>{
     try {
-        const studentToClass: addStudents = {
-            id: req.body.id,
+        const studentToClass: relationship = {
+            id: Date.now(),
             studentId: req.body.student,
             classId: req.body.class
             
