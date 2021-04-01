@@ -20,14 +20,81 @@ Ele deve possuir, ao menos, as 3 entidades importantes:
 
 As funcionalidades básicas são:
 
-→ Criar estudante;
+→ Criar estudante: 
+    Para criar um estudantes basta acessar URL: http://localhost:3003/student e passar o nome, email, e data de aniversário conforme o exemplo abaixo
+
+
+    {
+        "name": "xxxxx",
+        "email": "xxxx@xxxx.xxx",
+        "birthDate":"yyyy/mm/dd"
+    }
+    
 
 → Criar docente;
+    Para criar um estudantes basta acessar URL: http://localhost:3003/teacher e passar o nome, email, e data de aniversário conforme o exemplo abaixo
+
+    ```
+    {
+        "name": "xxxxx",
+        "email": "xxxx@xxxx.xxx",
+        "birthDate":"yyyy/mm/dd"
+    }
+    ```
 
 → Criar turma;
+    Para criar um estudantes basta acessar URL: http://localhost:3003/teacher e passar o nome, email, e data de aniversário conforme o exemplo abaixo
+
+    ```
+    {
+        "name": "xxxxx",
+        "email": "xxxx@xxxx.xxx",
+        "birthDate":"yyyy/mm/dd"
+    }
+    ```
+
+
 
 → Adicionar estudante na turma;
+    Para Adicionar um estudante em uma turma basta acessar URL: http://localhost:3003/class/addStudent e passar o id do Professor e o id da turma conforme o exemplo abaixo
+
+    ```
+    {
+        "student": "Id do professor aqui",
+        "class": "Id da turma aqui"
+    }
+    ```
 
 → Adicionar docente na turma;
+    Para Adicionar um professor em uma turma basta acessar URL: http://localhost:3003/class/addTeacher e passar o id do Professor e o id da turma conforme o exemplo abaixo
+
+    ```
+    {
+        "teacher": "Id do professor aqui",
+        "class": "Id da turma aqui"
+    }
+    ```
 
 → Pegar a idade de algum estudante a partir do id
+    Para Adicionar um professor em uma turma basta acessar URL: http://localhost:3003/student/info/:id passar o id do aluno na url.
+
+    ```
+    Exemplo: http://localhost:3003/student/info/001
+    ```
+
+→ Exibir estudantes de uma turma;
+    Para pegar todos alunos de uma turma, basta digitar acessar o nome da turma na url URL: http://localhost:3003/class/student/:name 
+
+    ```
+    Exemplo: http://localhost:3003/class/epps
+    ```
+→ Exibir Professores de uma turma;
+    Para pegar todos professores de uma turma, basta digitar acessar o nome da turma na url URL: http://localhost:3003/class/teacher/:name 
+
+    ```
+    Exemplo: http://localhost:3003/class/teacher/cruz 
+    ```
+
+
+
+
